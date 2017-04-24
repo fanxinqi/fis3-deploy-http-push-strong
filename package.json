@@ -1,0 +1,25 @@
+{
+  "name": "fis3-deploy-http-push-plus",
+  "version": "2.0.6",
+  "description": "fis3 deploy http-push-plus plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fis",
+    "fis-plus",
+    "fis3",
+    "http-push-plus",
+    "deploy"
+  ],
+  "author": "fanxinqi",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fanxinqi/fis3-deploy-http-push-plus.git"
+  },
+  "dependencies": {
+    "prompt": "1.0.0"
+  }
+}
