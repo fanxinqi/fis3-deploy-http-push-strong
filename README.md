@@ -14,7 +14,7 @@ npm install fis3-deploy-http-push-strong --save-dev
 
 ## 使用方法
 ###### care from 的使用示例
-
+推荐写法：
 ```
  fis.media('qa').match('*',{
    deploy:[
