@@ -6,10 +6,10 @@
 
 ###### 全局安装
 
-npm install fis3-deploy-http-push-plus -g
+npm install fis3-deploy-http-push-strong -g
 ###### 或者本地安装
 
-npm install fis3-deploy-http-push-plus --save-dev
+npm install fis3-deploy-http-push-strong --save-dev
 
 
 ## 使用方法
@@ -18,7 +18,7 @@ npm install fis3-deploy-http-push-plus --save-dev
 ```
  fis.media('qa').match('*',{
    deploy:[
-     fis.plugin("http-push-plus",[{
+     fis.plugin("http-push-strong",[{
            receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php,
            to: '/home/work/htdocs/static',
            from:"/static"
@@ -40,17 +40,17 @@ npm install fis3-deploy-http-push-plus --save-dev
 ```
  fis.media('qa').match('*',{
    deploy:[
-     fis.plugin("http-push-plus",{
+     fis.plugin("http-push-strong",{
            receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php',
            to: '/home/work/htdocs/static',
            from:"/static"
      }),
-     fis.plugin("http-push-plus",{
+     fis.plugin("http-push-strong",{
            receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php',
            to: '/home/work/jello',
            from:"/WEB-INF"
      })，
-     fis.plugin("http-push-plus",{
+     fis.plugin("http-push-strong",{
            receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php',
            to: '/home/work/img',
            from:"/img"
@@ -63,7 +63,7 @@ npm install fis3-deploy-http-push-plus --save-dev
 ```
  fis.media('qa').match('*',{
    deploy:[
-     fis.plugin("http-push-plus",{
+     fis.plugin("http-push-strong",{
            receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php',
            to: '/home/work/'
      })

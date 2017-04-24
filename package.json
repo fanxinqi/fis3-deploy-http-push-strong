@@ -1,5 +1,5 @@
 {
-  "name": "fis3-deploy-http-push-plus",
+  "name": "fis3-deploy-http-push-strong",
   "version": "2.0.6",
   "description": "fis3 deploy http-push-plus plugin",
   "main": "index.js",
@@ -10,14 +10,14 @@
     "fis",
     "fis-plus",
     "fis3",
-    "http-push-plus",
+    "fis3-deploy-http-push-strong",
     "deploy"
   ],
   "author": "fanxinqi",
   "license": "BSD",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fanxinqi/fis3-deploy-http-push-plus.git"
+    "url": "https://github.com/fanxinqi/fis3-deploy-http-push-strong.git"
   },
   "dependencies": {
     "prompt": "1.0.0"
