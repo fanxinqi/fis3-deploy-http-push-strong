@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'E:\\workspace\\yanxiu-fe\\trunk\\vue\\vue2.0\\baike\\node_modules\\fis3-deploy-http-push-plus',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Administrator\AppData\Roaming\npm-cache\fis3-deploy-http-push-plus\2.0.6\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle fis3-deploy-http-push-plus@2.0.6~prepublish: fis3-deploy-http-push-plus@2.0.6
+11 silly lifecycle fis3-deploy-http-push-plus@2.0.6~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Administrator\\AppData\\Roaming\\npm-cache\\fis3-deploy-http-push-plus\\2.0.6\\package.tgz',
+12 verbose tar pack   'E:\\workspace\\yanxiu-fe\\trunk\\vue\\vue2.0\\baike\\node_modules\\fis3-deploy-http-push-plus' ]
+13 verbose tarball C:\Users\Administrator\AppData\Roaming\npm-cache\fis3-deploy-http-push-plus\2.0.6\package.tgz
+14 verbose folder E:\workspace\yanxiu-fe\trunk\vue\vue2.0\baike\node_modules\fis3-deploy-http-push-plus
+15 verbose addLocalTarball adding from inside cache C:\Users\Administrator\AppData\Roaming\npm-cache\fis3-deploy-http-push-plus\2.0.6\package.tgz
+16 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd fis3-deploy-http-push-plus@2.0.6
+18 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\fis3-deploy-http-push-plus\2.0.6\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\fis3-deploy-http-push-plus\2.0.6\package\package.json written
+21 silly publish { name: 'fis3-deploy-http-push-plus',
+21 silly publish   version: '2.0.6',
+21 silly publish   description: 'fis3 deploy http-push-plus plugin',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [ 'fis', 'fis-plus', 'fis3', 'http-push-plus', 'deploy' ],
+21 silly publish   author: { name: 'fanxinqi' },
+21 silly publish   license: 'BSD',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/fanxinqi/fis3-deploy-http-push-plus.git' },
+21 silly publish   dependencies: { prompt: '1.0.0' },
+21 silly publish   readme: '# fis3 http 部署插件加强版\n扩展了FIS 默认的部署插件，主要提供了release后的不同目录的定制化发布功能，兼容ffis3内置上传服务写法\n\n##  安装\n\n\n###### 全局安装\n\nnpm install fis3-deploy-http-push-plus -g\n###### 或者本地安装\n\nnpm install fis3-deploy-http-push-plus --save-dev\n\n\n## 使用方法\n###### care from 的使用示例\n\n```\n fis.media(\'qa\').match(\'*\',{\n   deploy:[\n     fis.plugin("http-push-plus",[{\n           receiver: \'http://cq.01.p.p.baidu.com:8888/receiver.php,\n           to: \'/home/work/htdocs/static\',\n           from:"/static"\n     },{\n           receiver: \'http://cq.01.p.p.baidu.com:8888/receiver.php\'\',\n           to: \'/home/work/jello\',\n           from:"/WEB-INF"\n     },\n     {\n           receiver: \'http://cq.01.p.p.baidu.com:8888/receiver.php\',\n           to: \'/home/work/img\',\n           from:"/img"\n     }])\n      ]\n })\n```\n###### 或\n\n```\n fis.media(\'qa\').match(\'*\',{\n   deploy:[\n     fis.plugin("http-push-plus",{\n           receiver: \'http://cq.01.p.p.baidu.com:8888/receiver.php\',\n           to: \'/home/work/htdocs/static\',\n           from:"/static"\n     }),\n     fis.plugin("http-push-plus",{\n           receiver: \'http://cq.01.p.p.baidu.com:8888/receiver.php\',\n           to: \'/home/work/jello\',\n           from:"/WEB-INF"\n     })，\n     fis.plugin("http-push-plus",{\n           receiver: \'http://cq.01.p.p.baidu.com:8888/receiver.php\',\n           to: \'/home/work/img\',\n           from:"/img"\n     })\n  ]\n })\n```\n###### 整体发布不care from  （http-push fis原带功能）\n\n```\n fis.media(\'qa\').match(\'*\',{\n   deploy:[\n     fis.plugin("http-push-plus",{\n           receiver: \'http://cq.01.p.p.baidu.com:8888/receiver.php\',\n           to: \'/home/work/\'\n     })\n   ]\n })\n```\n## 其他详细用法和http-push一致\nhttps://github.com/fex-team/fis3-deploy-http-push\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   bugs: { url: 'https://github.com/fanxinqi/fis3-deploy-http-push-plus/issues' },
+21 silly publish   homepage: 'https://github.com/fanxinqi/fis3-deploy-http-push-plus#readme',
+21 silly publish   _id: 'fis3-deploy-http-push-plus@2.0.6',
+21 silly publish   _shasum: '7688e7d1b76a23f7f0c1d9ea0a957414d79a18f7',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name fis3-deploy-http-push-plus
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'fis3-deploy-http-push-plus',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'fis3-deploy-http-push-plus',
+26 silly mapToRegistry   name: 'fis3-deploy-http-push-plus',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/fis3-deploy-http-push-plus
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Administrator\AppData\Roaming\npm-cache\fis3-deploy-http-push-plus\2.0.6\package.tgz
+30 verbose request uri https://registry.npmjs.org/fis3-deploy-http-push-plus
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:20:39
+33 verbose request using bearer token for auth
+34 verbose request id 47246c5e307be243
+35 http request PUT https://registry.npmjs.org/fis3-deploy-http-push-plus
+36 http 403 https://registry.npmjs.org/fis3-deploy-http-push-plus
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '120',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 24 Apr 2017 03:20:44 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-nrt6130-NRT',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1493004044.999288,VS0,VE110',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\fis3-deploy-http-push-plus on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "fis3-deploy-http-push-plus". Are you logged in as the correct user? : fis3-deploy-http-push-plus
+40 verbose stack     at makeError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid fis3-deploy-http-push-plus
+43 verbose cwd E:\workspace\yanxiu-fe\trunk\vue\vue2.0\baike\node_modules\fis3-deploy-http-push-plus
+44 error Windows_NT 6.1.7601
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.9.5
+47 error npm  v3.10.8
+48 error code E403
+49 error you do not have permission to publish "fis3-deploy-http-push-plus". Are you logged in as the correct user? : fis3-deploy-http-push-plus
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
