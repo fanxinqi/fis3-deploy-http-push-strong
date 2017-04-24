@@ -19,11 +19,11 @@ npm install fis3-deploy-http-push-strong --save-dev
  fis.media('qa').match('*',{
    deploy:[
      fis.plugin("http-push-strong",[{
-           receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php,
+           receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php',
            to: '/home/work/htdocs/static',
            from:"/static"
      },{
-           receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php'',
+           receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php',
            to: '/home/work/jello',
            from:"/WEB-INF"
      },
