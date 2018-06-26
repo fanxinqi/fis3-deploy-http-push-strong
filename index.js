@@ -186,9 +186,16 @@ module.exports = function(arr_options, modified, total, callback) {
       handleSingle(arr_options,modified,total,callback);
   }
   else{
-    arr_options.__pos.forEach(function(item){
-      handleSingle(item,modified,total,callback);
+    var steps = arr_options.__pos.map(function(item){
+      return function(callback){
+        handleSingle(item, modified, total, callback);
+      }
     });
+    _.reduceRight(steps, function(next, current){
+      return function(){
+        current(next);
+      }
+    }, callback)();
   }
 };
 function handleSingle(options, modified, total, callback){
